@@ -1,0 +1,24 @@
+[package]
+name = "vaults-client"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+vaults = { git = "https://github.com/mmdhrumil/savings-account-vaults.git", branch = "master"}
+solana-program = "1.14.9"
+rust_decimal = "1.30.0"
+borsh = "0.9.1"
+anchor-lang = "0.26.0"
+anchor-spl = "0.26.0"
+anchor-client = "0.26.0"
+
+clap = { version = "3.0.13", features = ["derive"] }
+tokio = { version = "1.23.0", features = ["full"] }
+anyhow = "1.0"
+shellexpand = "2.1.2"
+spl-associated-token-account = { version = "1.1.1", features = [ "no-entrypoint" ] } 
+solana-cli-config = "1.14.9"
+solana-sdk = "=1.14.9"
+solana-client = "=1.14.9"
